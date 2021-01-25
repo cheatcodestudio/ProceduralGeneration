@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4359889294194246361}
   - component: {fileID: 4359889294194246360}
   - component: {fileID: 4359889294194246343}
-  - component: {fileID: -8877895876117814359}
   m_Layer: 0
   m_Name: NorthSouth
   m_TagString: Untagged
@@ -794,32 +793,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &-8877895876117814359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4359889294194246342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5436d763f88e1024cace8320bc1dfa2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockListA:
-  - {fileID: -2597413568613858118, guid: 983f17814aadc1e4c8f3ada6b2e28603, type: 3}
-  - {fileID: -8877895876117814359}
-  - {fileID: 3370665109483031662, guid: 868436347be2a29458ddaa63d97c8e7c, type: 3}
-  - {fileID: -8719661305473905374, guid: d2ef7c2cebfec714d97bbd2a1bc05a68, type: 3}
-  - {fileID: 8204641653778554096, guid: a298ac2faf32e014aa16eea56386f676, type: 3}
-  blockListB:
-  - {fileID: -892889425866498395, guid: 0381d655382f2164abf3d5f9aa34f7ec, type: 3}
-  - {fileID: 8204641653778554096, guid: a298ac2faf32e014aa16eea56386f676, type: 3}
-  - {fileID: 2785313728460049922, guid: 9807e11069dcd414eb5fa113401cbb12, type: 3}
-  - {fileID: 4932003664278286738, guid: 43cc5da82e6b10245a89f98493d0e39e, type: 3}
-  - {fileID: -8877895876117814359}
-  blockListC: []
-  blockListD: []
-  locations:
-  - {x: -10, y: 0, z: 0}
-  - {x: 10, y: 0, z: 0}

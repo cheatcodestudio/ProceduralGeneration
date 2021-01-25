@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1267497941641849286}
   - component: {fileID: 1267497941641849287}
   - component: {fileID: 1267497941641849284}
-  - component: {fileID: 4932003664278286738}
   m_Layer: 0
   m_Name: NorthWestAngle
   m_TagString: Untagged
@@ -854,28 +853,3 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!114 &4932003664278286738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267497941641849285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5436d763f88e1024cace8320bc1dfa2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blockType: 0
-  blockList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 4932003664278286738}
