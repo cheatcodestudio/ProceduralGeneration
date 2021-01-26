@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4163622413191775004}
+  - component: {fileID: 9066526614536609509}
   - component: {fileID: 4163622413191775005}
   - component: {fileID: 4163622413191775002}
-  - component: {fileID: 9066526614536609509}
   - component: {fileID: 4163622413191775003}
   - component: {fileID: 4163622413191775000}
   m_Layer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4163622413191775001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 623840465683415556}
@@ -37,6 +37,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9066526614536609509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4163622413191775001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a354fdcb72a65e438413f3da4e81fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rayCastingPositions:
+  - {fileID: 1353734874019000492}
+  - {fileID: 5581992364575432975}
 --- !u!114 &4163622413191775005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,21 +849,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9066526614536609509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4163622413191775001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a354fdcb72a65e438413f3da4e81fb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rayCastingPositions:
-  - {fileID: 1353734874019000492}
-  - {fileID: 5581992364575432975}
 --- !u!33 &4163622413191775003
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -884,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[0]
@@ -893,7 +893,7 @@ PrefabInstance:
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 7582245413753492641, guid: d2ef7c2cebfec714d97bbd2a1bc05a68, type: 3}
+      objectReference: {fileID: 3095100586155437065, guid: 983f17814aadc1e4c8f3ada6b2e28603, type: 3}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[2]
       value: 
@@ -901,7 +901,11 @@ PrefabInstance:
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 3095100586155437065, guid: 983f17814aadc1e4c8f3ada6b2e28603, type: 3}
+      objectReference: {fileID: 7582245413753492641, guid: d2ef7c2cebfec714d97bbd2a1bc05a68, type: 3}
+    - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
+      propertyPath: prefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 7589598199467551305, guid: 868436347be2a29458ddaa63d97c8e7c, type: 3}
     - target: {fileID: 3407936508156263087, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: m_Name
       value: RayCastSpawner A
@@ -977,7 +981,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[0]
@@ -986,15 +990,19 @@ PrefabInstance:
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 5439210202345972614, guid: 87c8ee175eb4bb64b8b2faace76779e6, type: 3}
+      objectReference: {fileID: 5672810290984059020, guid: c670764cfe3fc4141b690ccad4f3b185, type: 3}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 1267497941641849285, guid: 43cc5da82e6b10245a89f98493d0e39e, type: 3}
+      objectReference: {fileID: 5439210202345972614, guid: 87c8ee175eb4bb64b8b2faace76779e6, type: 3}
     - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: prefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 9059886966337830706, guid: 0381d655382f2164abf3d5f9aa34f7ec, type: 3}
+      objectReference: {fileID: 1267497941641849285, guid: 43cc5da82e6b10245a89f98493d0e39e, type: 3}
+    - target: {fileID: 2857589926848892157, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
+      propertyPath: prefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 7582245413753492641, guid: d2ef7c2cebfec714d97bbd2a1bc05a68, type: 3}
     - target: {fileID: 3407936508156263087, guid: cbe19709d4e0a054ba6c4d06a26d6e9a, type: 3}
       propertyPath: m_Name
       value: RayCastSpawner B
